@@ -14,6 +14,7 @@
           (system:
             function (nixpkgs.legacyPackages.${system})
           );
+      node2nix = pkgs: import ./composition.nix { inherit pkgs; };
     in
     {
       devShells = forAllSystems (pkgs: {
@@ -21,7 +22,7 @@
           packages = with pkgs; [
             nodejs_18
             nodePackages.typescript
-            nodePackages.typescript-language-server
+            (node2nix pkgs)."@angular/cli-16.1.0"
           ];
         };
       });
