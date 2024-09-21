@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ClienteModule } from './pages/cliente/cliente.module';
+import { ContaModule } from './pages/conta/conta.module';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ClienteModule } from './pages/cliente/cliente.module';
   ],
   imports: [
     ClienteModule,
+    ContaModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
