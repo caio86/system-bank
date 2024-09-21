@@ -12,10 +12,18 @@ const routes: Routes = [
         component: CadastroClienteComponent,
       },
       {
+        path: "editar/:id",
+        component: CadastroClienteComponent,
+      },
+      {
         path: "",
         component: ListagemClienteComponent,
       },
     ],
+  },
+  {
+    path: "",
+    component: ListagemClienteComponent,
   },
 ];
 
