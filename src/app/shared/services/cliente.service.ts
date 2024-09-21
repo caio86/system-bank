@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment.development';
 })
 export class ClienteService {
 
-  api = `${environment.api}/clientes`;
+  api = `${environment.api}/clientes/`;
 
   constructor(private clienteHttp: HttpClient) { }
 
@@ -27,5 +27,17 @@ export class ClienteService {
     return this.clienteHttp.get<Cliente[]>(
       `${this.api}?page=${page}&pageSize=${pageSize}`
     )
+  }
+
+  deletar(idCliente: number): Observable<object> {
+    return this.clienteHttp.delete<object>(`${this.api}${idCliente}`)
+  }
+
+  pesquisarPorId(id: number): Observable<Cliente> {
+    return this.clienteHttp.get<Cliente>(`${this.api}${id}`)
+  }
+
+  atualizar(cliente: Cliente): Observable<Cliente> {
+    return this.clienteHttp.put<Cliente>(`${this.api}${cliente.id}`, cliente)
   }
 }
