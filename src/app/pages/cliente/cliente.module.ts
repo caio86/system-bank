@@ -7,12 +7,14 @@ import { MaterialModule } from 'src/app/shared/material/material.module';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
+import { ListagemClienteComponent } from './listagem-cliente/listagem-cliente.component';
 
 
 
 @NgModule({
   declarations: [
-    CadastroClienteComponent
+    CadastroClienteComponent,
+    ListagemClienteComponent
   ],
   imports: [
     CommonModule,
@@ -27,6 +29,9 @@ import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.co
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [provideNgxMask()],
-  exports: [CadastroClienteComponent],
+  exports: [
+    CadastroClienteComponent,
+    ListagemClienteComponent
+  ],
 })
 export class ClienteModule { }
