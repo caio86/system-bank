@@ -38,6 +38,6 @@ export class ClienteService {
   }
 
   atualizar(cliente: Cliente): Observable<Cliente> {
-    return this.clienteHttp.put<Cliente>(`${this.api}${cliente.id}`, cliente)
+    return this.clienteHttp.put<Cliente>(`${this.api}${cliente.id}/`, cliente)
   }
 }
