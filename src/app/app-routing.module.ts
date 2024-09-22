@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ListagemClienteComponent } from './pages/cliente/listagem-cliente/listagem-cliente.component';
 import { CadastroClienteComponent } from './pages/cliente/cadastro-cliente/cadastro-cliente.component';
 import { ListagemContaComponent } from './pages/conta/listagem-conta/listagem-conta.component';
+import { CadastroContaComponent } from './pages/conta/cadastro-conta/cadastro-conta.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,14 @@ const routes: Routes = [
   {
     path: "conta",
     children: [
+      {
+        path: "novo",
+        component: CadastroContaComponent,
+      },
+      {
+        path: "editar/:id",
+        component: CadastroContaComponent,
+      },
       {
         path: "",
         component: ListagemContaComponent,
