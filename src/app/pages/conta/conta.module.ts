@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { CadastroContaComponent } from './cadastro-conta/cadastro-conta.component';
+import { SaqueContaComponent } from './saque-conta/saque-conta.component';
 
 
 
@@ -14,6 +15,7 @@ import { CadastroContaComponent } from './cadastro-conta/cadastro-conta.componen
   declarations: [
     ListagemContaComponent,
     CadastroContaComponent,
+    SaqueContaComponent,
   ],
   imports: [
     CommonModule,
