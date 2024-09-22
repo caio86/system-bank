@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { CadastroContaComponent } from './cadastro-conta/cadastro-conta.component';
 import { SaqueContaComponent } from './saque-conta/saque-conta.component';
+import { DepositoContaComponent } from './deposito-conta/deposito-conta.component';
 
 
 
@@ -16,6 +17,7 @@ import { SaqueContaComponent } from './saque-conta/saque-conta.component';
     ListagemContaComponent,
     CadastroContaComponent,
     SaqueContaComponent,
+    DepositoContaComponent,
   ],
   imports: [
     CommonModule,

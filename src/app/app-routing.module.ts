@@ -5,6 +5,7 @@ import { CadastroClienteComponent } from './pages/cliente/cadastro-cliente/cadas
 import { ListagemContaComponent } from './pages/conta/listagem-conta/listagem-conta.component';
 import { CadastroContaComponent } from './pages/conta/cadastro-conta/cadastro-conta.component';
 import { SaqueContaComponent } from './pages/conta/saque-conta/saque-conta.component';
+import { DepositoContaComponent } from './pages/conta/deposito-conta/deposito-conta.component';
 
 const routes: Routes = [
   {
@@ -34,6 +35,10 @@ const routes: Routes = [
       {
         path: "editar/:id",
         component: CadastroContaComponent,
+      },
+      {
+        path: "deposito",
+        component: DepositoContaComponent,
       },
       {
         path: "saque",
