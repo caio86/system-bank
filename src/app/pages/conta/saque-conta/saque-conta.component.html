@@ -31,9 +31,11 @@
       </mat-form-field>
 
       <!-- Botão de submissão do formulário -->
-      <button [disabled]="!formGroup.valid" type="submit" mat-raised-button color="primary">
-        Cadastrar
-      </button>
+      <div class="d-flex justify-content-center">
+        <button [disabled]="!formGroup.valid" type="submit" mat-raised-button color="primary">
+          Cadastrar
+        </button>
+      </div>
     </form>
 
   </div>
