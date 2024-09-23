@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { CadastroContaComponent } from './cadastro-conta/cadastro-conta.component';
 import { SaqueContaComponent } from './saque-conta/saque-conta.component';
 import { DepositoContaComponent } from './deposito-conta/deposito-conta.component';
+import { TransferenciaContaComponent } from './transferencia-conta/transferencia-conta.component';
 
 
 
@@ -18,6 +19,7 @@ import { DepositoContaComponent } from './deposito-conta/deposito-conta.componen
     CadastroContaComponent,
     SaqueContaComponent,
     DepositoContaComponent,
+    TransferenciaContaComponent,
   ],
   imports: [
     CommonModule,
